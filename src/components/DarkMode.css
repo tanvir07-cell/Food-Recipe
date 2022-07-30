@@ -1,0 +1,119 @@
+/* #darkMode {
+    background: transparent
+    url("https://raw.githubusercontent.com/tanvir07-cell/dark-mode-react/main/src/components/assets/moon.png")
+    no-repeat center;
+    background-size: 30px 30px;
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+    -ms-transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
+  
+  #darkMode:hover,
+  #darkMode:focus {
+    filter: none;
+    -webkit-filter: none;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  #darkMode.clicked {
+    filter: none !important;
+    -webkit-filter: none !important;
+    background-color: black;
+  } */
+
+
+  
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 14px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background: #19a2c1 ;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .switch-checkbox {
+    padding: 10px;
+  }
+  .container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+  }
